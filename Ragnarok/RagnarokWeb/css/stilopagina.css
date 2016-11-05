@@ -1,0 +1,113 @@
+﻿@font-face{
+    font-family:ragnarok;
+    src:url(../fonts/Ragnarok.ttf);
+}
+body{
+    margin:0;
+    padding:0;
+    background:white;
+}
+.topo{
+    background: linear-gradient(to right,rgba(0,0,0,0.4) 10px,rgba(0,0,0,0.8));
+    height:20px;
+    color:#fff; 
+}
+.topo *{
+    margin:0;
+    padding:0;
+}
+.topo .nav{
+    float:left;
+    list-style-type:none;
+    height:100%;
+}
+
+.topo .nav li{
+    
+}
+.topo .nav a{
+    float:left;
+    width:120px;
+    text-align:center;
+    color: #9084f8;
+    text-decoration:none;
+    font:15px ragnarok;
+    text-shadow:2px 2px 4px #000000;
+}
+
+.topo .nav a:hover{
+    background:#fff;
+    color: #064ef8;
+    cursor:pointer;
+}
+
+.imagetop{
+    width:800px;
+    height:150px;
+    background:#fff;
+    margin:0 auto;
+    margin-top: 2px;
+}
+.maincontent{
+    width:800px;
+    padding-bottom:300px;
+    background:#DCDCDC;
+    margin:0 auto;
+    margin-top:13px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.maincontent h1{
+    margin:0 auto;
+    width:100%;
+    text-align:center;
+}
+.ragnafont{
+    font-family:ragnarok;
+    font-stretch:expanded;
+}
+
+.formee{
+
+}
+.formee div:first-child {
+    border-top:1px solid #333;
+}
+.formee div{
+    border-bottom:1px solid #333;
+    padding:13px;
+    width:50%;
+    border-left:1px solid #333;
+    border-right:1px solid #333;
+    background:#cccccc;
+}
+.formee div *{
+    display:block;
+    margin:2px;
+}
+.formee button[type=submit]{
+    float:left;
+    margin-top:12px;
+    color: #fff;
+    background:green;
+    border:none;
+    width:199px;
+    height:30px;
+    font-family:ragnarok;
+}
+.formee button[type=reset]{
+    margin-top:12px;
+    color: #fff;
+    background: red;
+    border:none;
+    width:199px;
+    height:30px;
+    font-family:ragnarok;
+}
+
+.formee button{
+    cursor:pointer;
+}
+
+.formee{
+    font:bold 24px message-box;
+}
