@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Cadastro.aspx.cs" Inherits="Cadastro" MasterPageFile="~/MasterPage.master" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeBehind="Cadastro.aspx.cs" Inherits="RagnarokWeb.Cadastro" %>
 <asp:Content ID="DefaultContentHead" ContentPlaceHolderID="head" runat="server">
 
 </asp:Content>
@@ -6,7 +6,6 @@
     <h1 class="ragnafont">Ragnarok - Cadastro</h1>
     <fieldset>
         <legend>Preencher todos os Campos</legend>
-        <form action="javascript:void(0)" id="cadastro-usuario" class="formee">
             <div>
                 <label for="username">Nome de usuário:</label>
                 <asp:TextBox ID="username" runat="server" placeholder="Nome de usuário" autofocus="autofocus"></asp:TextBox>
@@ -20,6 +19,5 @@
                 <asp:TextBox ID="senha" runat="server" placeholder="Digite sua senha" autofocus="autofocus"></asp:TextBox>
             </div>
             <asp:Button ID="btnCadastrar" runat="server" Text="Cadastrar" OnClick="btnCadastrar_Click" />
-        </form>
     </fieldset>
 </asp:Content>

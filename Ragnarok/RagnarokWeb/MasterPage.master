@@ -28,7 +28,9 @@
     </div>
     <div class="maincontent">
         <!-- esta tag asp e para conter o conteudo de cada pagina do site -->
-        <asp:ContentPlaceHolder ID="PageBody" runat="server"></asp:ContentPlaceHolder>
+        <form runat="server">
+            <asp:ContentPlaceHolder ID="PageBody" runat="server"></asp:ContentPlaceHolder>
+        </form>
         <!-- fim do contentplaceholder -->
     </div>
 </body>
