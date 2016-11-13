@@ -11,7 +11,7 @@ namespace RagnarokWeb
 {
     public partial class Cadastro : System.Web.UI.Page
     {
-        string dbPath = @"C:\ragnarokdb\usuarios.mdb";
+        string dbPath = @"C:\ragnarokdb\BancoPortal.mdb";
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -25,7 +25,7 @@ namespace RagnarokWeb
             cmd.Connection = conn;
             conn.Open();
             cmd.CommandText =
-            "insert into usuario (username, email, senha) values ('" + username.Text + "', '" + email.Text + "','" + senha.Text + "')";
+            "insert into usuario (login, senha, email) values ('" + username.Text + "', '" + senha.Text + "','" + email.Text + "')";
             cmd.CommandType = CommandType.Text;
             conn.Close();
             conn.Open();
