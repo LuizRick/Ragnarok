@@ -11,4 +11,9 @@ public partial class MasterPage : System.Web.UI.MasterPage
     {
 
     }
+
+    protected void btn_login_Click(object sender, EventArgs e)
+    {
+
+    }
 }

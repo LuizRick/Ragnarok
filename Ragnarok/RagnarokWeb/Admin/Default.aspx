@@ -3,5 +3,10 @@
 
 </asp:Content>
 <asp:Content ID="DefaultConttentBody" ContentPlaceHolderID="PageBody" runat="server">
-    <h1 class="ragnafont">Ragnarok - inicio</h1>
+    <article class="main-article">
+        <header>
+            PORTAL MMO
+            <em>Cadastro de Servers</em>
+        </header>
+    </article>
 </asp:Content>

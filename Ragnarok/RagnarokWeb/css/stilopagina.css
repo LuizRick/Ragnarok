@@ -11,6 +11,7 @@ body{
     background: linear-gradient(to right,rgba(0,0,0,0.4) 10px,rgba(0,0,0,0.8));
     height:20px;
     color:#fff; 
+    position:relative;
 }
 .topo *{
     margin:0;
@@ -41,19 +42,27 @@ body{
     cursor:pointer;
 }
 
+.topo #login-container{
+    position:absolute;
+    right:0;
+    width:auto;
+}
+
 .imagetop{
     width:800px;
-    height:150px;
+    height: 298px;
     background:#fff;
     margin:0 auto;
     margin-top: 2px;
+    background: url("../img/Banner.png") no-repeat;
 }
 .maincontent{
-    width:800px;
+    width: 1074px;
     padding-bottom:300px;
-    background:#DCDCDC;
+    background:#DCDCDC url("../img/TopBorderSite.png") no-repeat;
+    background-size: 0;
     margin:0 auto;
-    margin-top:13px;
+    margin-top: -5px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .maincontent h1{
@@ -110,4 +119,31 @@ body{
 
 .formee{
     font:bold 24px message-box;
+}
+
+#formee-cad{
+
+}
+
+#formee-cad div{
+    margin:10px;
+}
+
+.main-article{
+    background:#333;
+    padding-bottom:12px;
+    border-radius:12px;
+}
+.main-article header{
+    font: 40px tahoma,arial,sans bolder;
+    text-shadow: 2px 2px 4px #000000;
+    margin:0 auto;
+    width: 90%;
+    text-align:center;
+    color:#fff;
+    transform: skewX(-10deg);
+}
+.main-article header em{
+    display:block;
+    font-size:15px !important;
 }

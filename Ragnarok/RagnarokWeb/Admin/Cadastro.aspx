@@ -4,7 +4,7 @@
 </asp:Content>
 <asp:Content ID="DefaultConttentBody" ContentPlaceHolderID="PageBody" runat="server">
     <h1 class="ragnafont">Ragnarok - Cadastro</h1>
-    <fieldset>
+    <fieldset id="formee-cad">
         <legend>Preencher todos os Campos</legend>
             <div>
                 <label for="username">Nome de usuário:</label>
@@ -15,8 +15,8 @@
                 <asp:TextBox ID="email" runat="server" placeholder="Endereço de e-mail atual" autofocus="autofocus"></asp:TextBox>
             </div>
             <div>
-                <label for="userpwd">Escolhe sua senha:</label>
-                <asp:TextBox ID="senha" runat="server" placeholder="Digite sua senha" autofocus="autofocus"></asp:TextBox>
+                <label for="userpwd">Escolha sua senha:</label>
+                <asp:TextBox TextMode="Password" ID="senha" runat="server" placeholder="Digite sua senha" autofocus="autofocus"></asp:TextBox>
             </div>
             <asp:Button ID="btnCadastrar" runat="server" Text="Cadastrar" OnClick="btnCadastrar_Click" />
     </fieldset>
