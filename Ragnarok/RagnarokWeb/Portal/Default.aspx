@@ -26,7 +26,7 @@
                             <%# DataBinder.Eval(Container.DataItem,"Descricao") %>
                         </div>
                     </div>
-                    <div style="margin:10px 0 10px 0"></div>
+                    <div style="margin:10px 0 11px 0"></div>
                 </ItemTemplate>
             </asp:Repeater>
         </section>
