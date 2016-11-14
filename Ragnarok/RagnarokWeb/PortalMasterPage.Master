@@ -1,0 +1,42 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="PortalMasterPage.master.cs" Inherits="RagnarokWeb.PortalMasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <!-- esta tag vai todos os arquivos de css ou javascript que prescisam ser carregados para cada pagina -->
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+    <!-- fim de esta tag vai todos os arquivos de css ou javascript que prescisam ser carregados para cada pagina-->
+
+    <!-- scripts e folha de estilo padrao das paginas -->
+    <link rel="stylesheet" type="text/css" href="css/stilopagina.css" />
+    <script type="text/javascript" src="/js/jquery.js"></script>
+    <script type="text/javascript" src="/js/script.js"></script>
+    <!-- fim dos scripts -->
+</head>
+<body>
+    <form runat="server">
+        <div class="topo">
+            <ul class="nav">
+                <li>
+                    <a href="Default.aspx">Home</a>
+                    <a href="/Admin/Cadastro.aspx">Cadastro</a>
+                </li>
+            </ul>
+                <%--<div id="login-container">
+                    <strong style="color:#fff;">Admin</strong>
+                    <asp:TextBox ID="email_login" runat="server" placeholder="email" autofocus="true"></asp:TextBox>
+                    <asp:TextBox ID="senha_login" runat="server" placeholder="senha" TextMode="Password"></asp:TextBox>
+                    <asp:Button ID="btn_login" runat="server" Text="Login" OnClick="btn_login_Click" />
+                </div>--%>
+        </div>
+        <div class="imagetop"></div>
+        <div class="maincontent">
+            <!-- esta tag asp e para conter o conteudo de cada pagina do site -->
+            <asp:ContentPlaceHolder ID="PageBody" runat="server"></asp:ContentPlaceHolder>
+            <!-- fim do contentplaceholder -->
+        </div>
+    </form>
+</body>
+</html>

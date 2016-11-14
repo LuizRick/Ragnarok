@@ -11,7 +11,7 @@ namespace RagnarokWeb
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            Response.Write("ola");
+           
         }
     }
 }

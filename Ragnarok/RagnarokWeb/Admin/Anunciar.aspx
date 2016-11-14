@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeBehind="Anunciar.aspx.cs" Inherits="RagnarokWeb.Admin.Anunciar" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/AdminMasterPage.master" AutoEventWireup="true" CodeBehind="Anunciar.aspx.cs" Inherits="RagnarokWeb.Admin.Anunciar" %>
 <asp:Content ID="DefaultContentHead" ContentPlaceHolderID="head" runat="server">
     
 </asp:Content>

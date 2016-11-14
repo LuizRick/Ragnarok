@@ -27,9 +27,6 @@ body {
         height: 100%;
     }
 
-        .topo .nav li {
-        }
-
         .topo .nav a {
             float: left;
             width: 120px;
@@ -82,62 +79,60 @@ body {
     font-stretch: expanded;
 }
 
-.formee {
+
+
+.formee div:first-child {
+    border-top: 1px solid #333;
 }
 
-    .formee div:first-child {
-        border-top: 1px solid #333;
+.formee div {
+    border-bottom: 1px solid #333;
+    padding: 13px;
+    width: 50%;
+    border-left: 1px solid #333;
+    border-right: 1px solid #333;
+    background: #cccccc;
+}
+
+    .formee div * {
+        display: block;
+        margin: 2px;
     }
 
-    .formee div {
-        border-bottom: 1px solid #333;
-        padding: 13px;
-        width: 50%;
-        border-left: 1px solid #333;
-        border-right: 1px solid #333;
-        background: #cccccc;
-    }
+.formee button[type=submit] {
+    float: left;
+    margin-top: 12px;
+    color: #fff;
+    background: green;
+    border: none;
+    width: 199px;
+    height: 30px;
+    font-family: ragnarok;
+}
 
-        .formee div * {
-            display: block;
-            margin: 2px;
-        }
+.formee button[type=reset] {
+    margin-top: 12px;
+    color: #fff;
+    background: red;
+    border: none;
+    width: 199px;
+    height: 30px;
+    font-family: ragnarok;
+}
 
-    .formee button[type=submit] {
-        float: left;
-        margin-top: 12px;
-        color: #fff;
-        background: green;
-        border: none;
-        width: 199px;
-        height: 30px;
-        font-family: ragnarok;
-    }
-
-    .formee button[type=reset] {
-        margin-top: 12px;
-        color: #fff;
-        background: red;
-        border: none;
-        width: 199px;
-        height: 30px;
-        font-family: ragnarok;
-    }
-
-    .formee button {
-        cursor: pointer;
-    }
+.formee button {
+    cursor: pointer;
+}
 
 .formee {
     font: bold 24px message-box;
 }
 
-#formee-cad {
-}
 
-    #formee-cad div {
-        margin: 10px;
-    }
+
+#formee-cad div {
+    margin: 10px;
+}
 
 .main-article {
     background: #333;
@@ -165,6 +160,27 @@ body {
     height: 50px;
 }
 
-.TableFormAnuncioDesc {  /* css da tabela do formulario de cadastro de anuncio (linha da descrição do anuncio) */
+.TableFormAnuncioDesc { /* css da tabela do formulario de cadastro de anuncio (linha da descrição do anuncio) */
     height: 109px;
+}
+
+/*Estilho responsavel pelos anuncios postados na home do Portal*/
+.clianuncio{
+    width:auto;
+    background:#fff;
+}
+
+.clianuncio .header{
+    font:30px ragnarok,arial bold;
+    border:1px solid #333;
+}
+.clianuncio .img{
+    border-left:1px solid #333;
+    border-right:1px solid #333;
+    border-bottom:1px solid #333;
+}
+.clianuncio .descricao{
+    border-bottom:1px solid #333;
+    border-left:1px solid #333;
+    border-right:1px solid #333;
 }
