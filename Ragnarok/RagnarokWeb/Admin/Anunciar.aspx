@@ -41,7 +41,15 @@
         <tr>
             <td class="TableFormAnuncio" style="font-family: 'Arial Black'; font-size: 13px;">Link Do Seu Site: &nbsp;&nbsp;</td>
             <td class="TableFormAnuncio">
-                <asp:TextBox ID="TextBoxLinkServer" runat="server"></asp:TextBox>
+                <asp:TextBox ID="TextBoxLinkServer" runat="server" Width="159px"></asp:TextBox>
+            </td>
+        </tr>
+        <tr>
+            <td class="TableFormAnuncio" style="font-family: 'Arial Black'; font-size: 13px;">
+                <asp:Label ID="Label1" runat="server" Text="Link Da Imagem:"></asp:Label>
+            </td>
+            <td class="TableFormAnuncio">
+                <asp:TextBox ID="TextBoxLinkAn" runat="server" Width="162px"></asp:TextBox>
             </td>
         </tr>
         <tr>
