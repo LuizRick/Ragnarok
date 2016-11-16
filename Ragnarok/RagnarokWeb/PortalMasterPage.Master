@@ -22,14 +22,25 @@
                 <li>
                     <a href="Default.aspx">Home</a>
                     <a href="/Admin/Cadastro.aspx">Cadastro</a>
+                    <a href="/Portal/Sobre.aspx">Sobre</a>
                 </li>
             </ul>
-                <%--<div id="login-container">
-                    <strong style="color:#fff;">Admin</strong>
+            <asp:Panel Visible="true" runat="server" ID="loginform">
+                <div id="login-container">
+                    <strong style="color: #fff;">Admin</strong>
                     <asp:TextBox ID="email_login" runat="server" placeholder="email" autofocus="true"></asp:TextBox>
                     <asp:TextBox ID="senha_login" runat="server" placeholder="senha" TextMode="Password"></asp:TextBox>
                     <asp:Button ID="btn_login" runat="server" Text="Login" OnClick="btn_login_Click" />
-                </div>--%>
+                </div>
+            </asp:Panel>
+            <asp:Panel Visible="false" runat="server" ID="userlogin">
+                <div id="loged-container" style="background:#fff;height:30px;">
+                    <strong><asp:Label ID="login_name" runat="server"></asp:Label></strong> / 
+                    <strong><asp:Label ID="login_usrname" runat="server"></asp:Label></strong>
+                    <a href="/Admin/Anunciar.aspx" class="btn">Anunciar</a>
+                    <asp:Button ID="btn_sair" runat="server" OnClick="btn_sair_Click"  Text="Sair" CssClass="btn"/>
+                </div>
+            </asp:Panel>
         </div>
         <div class="imagetop"></div>
         <div class="maincontent">

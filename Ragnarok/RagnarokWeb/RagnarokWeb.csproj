@@ -96,6 +96,7 @@
   <ItemGroup>
     <Content Include="Admin\Anunciar.aspx" />
     <Content Include="Admin\Cadastro.aspx" />
+    <Content Include="Admin\Perfil.aspx" />
     <Content Include="Global.asax" />
     <Content Include="img\Banner.png" />
     <Content Include="img\TopBorderSite.png" />
@@ -104,10 +105,11 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="AdminMasterPage.master" />
     <Content Include="fonts\Ragnarok.ttf" />
     <Content Include="PortalMasterPage.Master" />
+    <Content Include="AdminMasterPage.Master" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
+    <Content Include="Portal\PortalCadastro.aspx" />
     <Content Include="Portal\Default.aspx" />
     <Content Include="Portal\Sobre.aspx" />
     <Content Include="Scripts\jquery-1.9.1.js" />
@@ -130,6 +132,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminMasterPage.Master.cs">
+      <DependentUpon>AdminMasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminMasterPage.Master.designer.cs">
+      <DependentUpon>AdminMasterPage.Master</DependentUpon>
+    </Compile>
     <Compile Include="Admin\Anunciar.aspx.cs">
       <DependentUpon>Anunciar.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -148,6 +157,15 @@
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="Admin\Perfil.aspx.cs">
+      <DependentUpon>Perfil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Perfil.aspx.designer.cs">
+      <DependentUpon>Perfil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Codes\Autenticacao.cs" />
+    <Compile Include="Codes\DataBase.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -157,10 +175,6 @@
     </Compile>
     <Compile Include="index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="AdminMasterPage.master.cs">
-      <DependentUpon>AdminMasterPage.master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="NotFound.aspx.cs">
       <DependentUpon>NotFound.aspx</DependentUpon>
@@ -172,6 +186,13 @@
     </Compile>
     <Compile Include="PortalMasterPage.Master.designer.cs">
       <DependentUpon>PortalMasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Portal\PortalCadastro.aspx.cs">
+      <DependentUpon>PortalCadastro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Portal\PortalCadastro.aspx.designer.cs">
+      <DependentUpon>PortalCadastro.aspx</DependentUpon>
     </Compile>
     <Compile Include="Portal\Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>

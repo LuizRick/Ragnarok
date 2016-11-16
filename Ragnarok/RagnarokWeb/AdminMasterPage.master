@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AdminMasterPage.master.cs" Inherits="MasterPage" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminMasterPage.master.cs" Inherits="RagnarokWeb.AdminMasterPage" %>
 
 <!DOCTYPE html>
 <!-- 
@@ -24,7 +24,6 @@
                 <li>
                     <a href="/Portal/Default.aspx">Home</a>
                     <a href="Cadastro.aspx">Cadastro</a>
-                    <a href="Anunciar.aspx">Anunciar</a>
                 </li>
             </ul>
                 <%--<div id="login-container">
@@ -33,6 +32,14 @@
                     <asp:TextBox ID="senha_login" runat="server" placeholder="senha" TextMode="Password"></asp:TextBox>
                     <asp:Button ID="btn_login" runat="server" Text="Login" OnClick="btn_login_Click" />
                 </div>--%>
+            <asp:Panel Visible="false" runat="server" ID="userlogin">
+                <div id="loged-container" style="background:#fff;height:30px;">
+                    <strong><asp:Label ID="login_name" runat="server"></asp:Label></strong> / 
+                    <strong><asp:Label ID="login_usrname" runat="server"></asp:Label></strong>
+                    <a href="/Admin/Anunciar.aspx" class="btn">Anunciar</a>
+                    <asp:Button ID="btn_sair" runat="server" OnClick="btn_sair_Click"  Text="Sair" CssClass="btn"/>
+                </div>
+            </asp:Panel>
         </div>
         <div class="imagetop"></div>
         <div class="maincontent">

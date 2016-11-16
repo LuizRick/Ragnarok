@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="NotFound.aspx.cs" Inherits="NotFound" MasterPageFile="~/MasterPage.master" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="NotFound.aspx.cs" Inherits="NotFound" MasterPageFile="~/PortalMasterPage.Master" %>
 <asp:Content ID="DefaultContentHead" ContentPlaceHolderID="head" runat="server">
 
 </asp:Content>
