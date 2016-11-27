@@ -25,7 +25,7 @@ namespace RagnarokWeb
             cmd.Connection = conn;
             conn.Open();
             cmd.CommandText =
-            "insert into usuario (login, senha, email) values ('" + username.Text + "', '" + senha.Text + "','" + email.Text + "')";
+            "insert into usuario (login, senha, email,nome) values ('" + username.Text + "', '" + senha.Text + "','" + email.Text + "' , '"+usernamecp.Text+"')";
             cmd.CommandType = CommandType.Text;
             cmd.ExecuteScalar();
             Response.Write("<script LANGUAGE='JavaScript' >alert('Cadastro realizado com sucesso')</script>");

@@ -66,7 +66,7 @@
     </table>
 
     <article class="main-article">
-        <header>Meu anuncios</header>
+        <header>Meus anúncios</header>
         <div style="background:#fff;padding:12px;" id="anuncios">
             <table border="1">
                 <tr>

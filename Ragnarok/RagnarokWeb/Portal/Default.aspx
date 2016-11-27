@@ -1,6 +1,11 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/PortalMasterPage.master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="RagnarokWeb.Portal.Default" %>
 
 <asp:Content ID="DefaultContentHead" ContentPlaceHolderID="head" runat="server">
+    <style>
+        .clianuncio{
+          
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="DefaultConttentBody" ContentPlaceHolderID="PageBody" runat="server">
     <article class="main-article">
@@ -16,6 +21,7 @@
                     <h1>Server de Jogos</h1>
                 </HeaderTemplate>
                 <ItemTemplate>
+                    <div style="height:90px;"></div>
                     <div class="clianuncio" style="<%# DataBinder.Eval(Container.DataItem, "tamanho") %>">
                         <div class="clianuncio header">
                             <%# DataBinder.Eval(Container.DataItem,"Nome") %>
@@ -29,7 +35,6 @@
                             <%# DataBinder.Eval(Container.DataItem,"Descricao") %>                            
                         </div>
                     </div>
-                    <div style="margin:10px 0 11px 0"></div>
                 </ItemTemplate>
             </asp:Repeater>
         </section>

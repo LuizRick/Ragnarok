@@ -97,6 +97,7 @@
     <Content Include="Admin\Anunciar.aspx" />
     <Content Include="Admin\Cadastro.aspx" />
     <Content Include="Admin\EditarAnuncio.aspx" />
+    <Content Include="Admin\ExcluirAnuncio.aspx" />
     <Content Include="Admin\Perfil.aspx" />
     <Content Include="Admin\scripts\Anunciar.js" />
     <Content Include="Global.asax" />
@@ -166,6 +167,13 @@
     </Compile>
     <Compile Include="Admin\EditarAnuncio.aspx.designer.cs">
       <DependentUpon>EditarAnuncio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ExcluirAnuncio.aspx.cs">
+      <DependentUpon>ExcluirAnuncio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ExcluirAnuncio.aspx.designer.cs">
+      <DependentUpon>ExcluirAnuncio.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\Perfil.aspx.cs">
       <DependentUpon>Perfil.aspx</DependentUpon>

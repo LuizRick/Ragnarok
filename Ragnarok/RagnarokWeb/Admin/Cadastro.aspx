@@ -7,8 +7,12 @@
     <fieldset id="formee-cad">
         <legend>Preencher todos os Campos</legend>
             <div>
+                <label for="usernamecp"></label>
+                <asp:TextBox ID="usernamecp" runat="server" placeholder="seu nome completo" autofocus="autofocus"></asp:TextBox>
+            </div>
+            <div>
                 <label for="username">Nome de usuário:</label>
-                <asp:TextBox ID="username" runat="server" placeholder="Nome de usuário" autofocus="autofocus"></asp:TextBox>
+                <asp:TextBox ID="username" runat="server" placeholder="Nome de usuário"></asp:TextBox>
             </div>
             <div>
                 <label for="email">Endereço de e-mail atual:</label>

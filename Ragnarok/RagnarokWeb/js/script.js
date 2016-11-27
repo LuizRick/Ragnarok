@@ -34,7 +34,7 @@ $(function () {
             dataType: "json",
             async: true,
             cache: false,
-            url: "/Admin/Default.aspx/Validar_Login",
+            url: "/Admin/Default.aspx/Validar_Login",       //url para WebMethod C#
             data: JSON.stringify({ email: useremail }),
             success: function (response) {
                 if(!response.d) //email invalido
@@ -53,16 +53,17 @@ $(function () {
     
     function Listar_Anuncios() {
         var sessionId = $("#idsession").val();
+        //faz a requisição POST  para o WebMethod / Listar_Anuncios da pagina de anuncios
         $.ajax({
             type: "POST",
             contentType: "application/json; charset=utf-8",
             dataType: "json",
             async: true,
             cache: false,
-            url: "/Admin/Anunciar.aspx/Lista_Anuncios",
+            url: "/Admin/Anunciar.aspx/Lista_Anuncios",//url para WebMethod C#
             data: JSON.stringify({ id: sessionId }),
             success: function (response) {
-                var html = "";
+                var html = "";      ///variavel de trabalho para colocar no corpo da pagina dinamicamente
                 var anuncios = response.d;
                 for(var x in anuncios)
                 {
@@ -80,13 +81,19 @@ $(function () {
                     html += "</tr>";
                 }
 
-                $("#corpo").append(html);
+                $("#corpo").append(html);   //coloca no final da div#corpo da Pagina Anunciar.aspx
             },
             error: function () {
                 console.dir("Erro na Requisição de validação de email");
             }
         });
     }
-    Listar_Anuncios();
+    //ac~ções a serem executadas dependendo da pagina e url
+    switch(location.pathname)
+    {
+        case "/Admin/Anunciar.aspx":
+            Listar_Anuncios();
+            break;
+    }
 
 });

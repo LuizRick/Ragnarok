@@ -10,7 +10,7 @@
 namespace RagnarokWeb.Admin {
     
     
-    public partial class EditarAnuncio {
+    public partial class ExcluirAnuncio {
         
         /// <summary>
         /// lblNomeAnuncio control.
@@ -67,84 +67,30 @@ namespace RagnarokWeb.Admin {
         protected global::System.Web.UI.WebControls.Label lblDescricaoAnuncio;
         
         /// <summary>
-        /// LabelNomeAn control.
+        /// btnExcluirAnuncio control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LabelNomeAn;
+        protected global::System.Web.UI.WebControls.Button btnExcluirAnuncio;
         
         /// <summary>
-        /// TextBoxNomeAn control.
+        /// btnCancelarExcluir control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBoxNomeAn;
+        protected global::System.Web.UI.WebControls.Button btnCancelarExcluir;
         
         /// <summary>
-        /// DropDownListTempo control.
+        /// status control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownListTempo;
-        
-        /// <summary>
-        /// txtNomeJogo control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtNomeJogo;
-        
-        /// <summary>
-        /// TextBoxLinkServer control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBoxLinkServer;
-        
-        /// <summary>
-        /// Label1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
-        
-        /// <summary>
-        /// TextBoxLinkAn control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBoxLinkAn;
-        
-        /// <summary>
-        /// TextBoxDescricao control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBoxDescricao;
-        
-        /// <summary>
-        /// ButtonEditar control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button ButtonEditar;
+        protected global::System.Web.UI.WebControls.Label status;
     }
 }

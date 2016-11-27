@@ -13,6 +13,15 @@ namespace RagnarokWeb {
     public partial class Cadastro {
         
         /// <summary>
+        /// usernamecp control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox usernamecp;
+        
+        /// <summary>
         /// username control.
         /// </summary>
         /// <remarks>

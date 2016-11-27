@@ -34,7 +34,7 @@ namespace RagnarokWeb.Admin
             cmd.Connection = conn;
             conn.Open();
             cmd.CommandText =
-            string.Format("INSER INTO Anuncio (Nome, Tempo, Jogo,  Site, link, Descricao,fk_usuario) VALUES ('{0}', '{1}','{2}','{3}','{4}','{5}',{6})",
+            string.Format("INSERT INTO Anuncio (Nome, Tempo, Jogo,  Site, link, Descricao,fk_usuario) VALUES ('{0}', '{1}','{2}','{3}','{4}','{5}',{6})",
             TextBoxNomeAn.Text, DropDownListTempo.SelectedItem, txtNomeJogo.Text,TextBoxLinkServer.Text,
             TextBoxLinkAn.Text, TextBoxDescricao.Text, auth.getKey("id")); // select dos campos do formulario
             cmd.CommandType = CommandType.Text;
@@ -42,7 +42,7 @@ namespace RagnarokWeb.Admin
             conn.Open();
             cmd.ExecuteScalar();
             Response.Write("<script LANGUAGE='JavaScript'>alert('Cadastro realizado com sucesso')</script>"); // mensagem 
-            Response.Redirect("/");
+            Response.Redirect("/Admin/Anuncios.aspx");
             conn.Close();
             conn.Dispose();
         }
@@ -70,7 +70,7 @@ namespace RagnarokWeb.Admin
                 {
                     codigo = dr.GetInt32(cod).ToString(),
                     nome = dr.GetString(nome),
-                    jogo = dr.GetString(tempo),
+                    jogo = dr.GetString(jogo),
                     descricao = dr.GetString(descricao),
                     link = dr.GetString(link),
                     site = dr.GetString(site),

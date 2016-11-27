@@ -7,9 +7,10 @@ using System.Web.UI.WebControls;
 using RagnarokWeb.Codes;
 using System.Data;
 using Domain;
+
 namespace RagnarokWeb.Admin
 {
-    public partial class EditarAnuncio : System.Web.UI.Page
+    public partial class ExcluirAnuncio : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -51,40 +52,38 @@ namespace RagnarokWeb.Admin
                 lblLInkImagem.Text = list.First().link;
                 lblNomeJogo.Text = list.First().jogo;
                 lblTempoAnuncio.Text = list.First().tempo;
-
             }
-            catch(Exception)
+            catch (Exception)
             {
                 Response.Redirect("/Admin/");
             }
         }
 
-        protected void ButtonEditar_Click(object sender, EventArgs e)
+        protected void Unnamed_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void btnExcluirAnuncio_Click(object sender, EventArgs e)
         {
             DataBase db = new DataBase();
             db.open();
-            Anuncio anuncio = new Anuncio()
-            {
-                nome = TextBoxNomeAn.Text,
-                jogo = txtNomeJogo.Text,
-                tempo = DropDownListTempo.SelectedValue,
-                descricao = TextBoxDescricao.Text,
-                link = TextBoxLinkAn.Text,
-                site = TextBoxLinkServer.Text
-            };
-            string sql = string.Format("UPDATE Anuncio SET Nome = '{0}', Jogo = '{1}' , Tempo = '{2}' , Descricao = '{3}', Site = '{4}', Link = '{5}'" +
-                 " WHERE Codigo = {6}", TextBoxNomeAn.Text, txtNomeJogo.Text, DropDownListTempo.SelectedValue, TextBoxDescricao.Text, TextBoxLinkServer.Text,
-                 TextBoxLinkAn.Text, Request.QueryString["id"]);
-            int rowsAffecteds = db.ExecuteCmd(sql);     //retorna o numero de linhas afetadas
+            string sql = string.Format("DELETE FROM Anuncio WHERE Codigo = {0}", Request.QueryString["id"]);
+            int rowsAffected = db.ExecuteCmd(sql);
             db.close();
-            if (rowsAffecteds > 0)
+            if (rowsAffected > 0)
             {
-                Response.Write("<script LANGUAGE='JavaScript'>alert('Editado com sucesso')</script>"); // mensagem 
                 Response.Redirect("/Admin/Anunciar.aspx");
             }
-            Response.Write("<script LANGUAGE='JavaScript'>alert('Não foi possivel editar')</script>"); // mensagem 
-            Response.Redirect("/");
-           
+            else
+            {
+                status.Text = "Não foi possivel excluir";
+            }
+        }
+
+        protected void btnCancelarExcluir_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("/Admin/Anunciar.aspx");
         }
     }
 }
