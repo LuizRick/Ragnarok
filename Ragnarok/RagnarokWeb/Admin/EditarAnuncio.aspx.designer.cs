@@ -10,7 +10,7 @@
 namespace RagnarokWeb.Admin {
     
     
-    public partial class Anunciar {
+    public partial class EditarAnuncio {
         
         /// <summary>
         /// LabelNomeAn control.
@@ -85,21 +85,12 @@ namespace RagnarokWeb.Admin {
         protected global::System.Web.UI.WebControls.TextBox TextBoxDescricao;
         
         /// <summary>
-        /// ButtonAnunciar control.
+        /// ButtonEditar control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button ButtonAnunciar;
-        
-        /// <summary>
-        /// idsession control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.HiddenField idsession;
+        protected global::System.Web.UI.WebControls.Button ButtonEditar;
     }
 }

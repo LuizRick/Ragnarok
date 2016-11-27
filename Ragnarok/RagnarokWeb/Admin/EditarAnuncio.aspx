@@ -1,14 +1,7 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/AdminMasterPage.master" AutoEventWireup="true" CodeBehind="Anunciar.aspx.cs" Inherits="RagnarokWeb.Admin.Anunciar" %>
-<asp:Content ID="DefaultContentHead" ContentPlaceHolderID="head" runat="server">
-    <script src="scripts/Anunciar.js"></script>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/AdminMasterPage.Master" AutoEventWireup="true" CodeBehind="EditarAnuncio.aspx.cs" Inherits="RagnarokWeb.Admin.EditarAnuncio" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
-<asp:Content ID="DefaultConttentBody" ContentPlaceHolderID="PageBody" runat="server">
-    <article class="main-article">
-        <header>
-            Anunciar
-            <em>Cadastro de Anúncios</em>
-        </header>
-    </article>
+<asp:Content ID="Content2" ContentPlaceHolderID="PageBody" runat="server">
     <table style="width: 57%; margin-left: 217px;"> <!-- tabela para organizar o formulario -->
         <tr>
             <td class="TableFormAnuncio" style="font-family: 'Arial Black'; font-size: 13px;">
@@ -60,32 +53,8 @@
         <tr>
             <td class="TableFormAnuncio" style="font-family: 'Arial Black'; font-size: 13px;">&nbsp;</td>
             <td class="TableFormAnuncio">
-                <asp:Button ID="ButtonAnunciar" runat="server" BackColor="Red" BorderColor="Black" Font-Bold="True" Font-Names="Arial Black" Font-Size="Medium" Height="38px" OnClick="ButtonAnunciar_Click" Text="Anunciar" Width="98px" />
+                <asp:Button ID="ButtonEditar"  OnClick="ButtonEditar_Click" runat="server" BackColor="Red" BorderColor="Black" Font-Bold="True" Font-Names="Arial Black" Font-Size="Medium" Height="38px" Text="Editar" Width="98px" />
             </td>
         </tr>
     </table>
-
-    <article class="main-article">
-        <header>Meu anuncios</header>
-        <div style="background:#fff;padding:12px;" id="anuncios">
-            <table border="1">
-                <tr>
-                    <th>Codigo</th>
-                    <th>Nome</th>
-                    <th>Jogo</th>
-                    <th>Tempo</th>
-                    <th>Descrição</th>
-                    <th>Site</th>
-                    <th>Link</th>
-                    <th>Editar</th>
-                    <th>Excluir</th>
-                </tr>
-                <tbody id="corpo">
-
-                </tbody>
-            </table>
-        </div>
-    </article>
-
-    <asp:HiddenField  runat="server"  ID="idsession" ClientIDMode="Static"/>
 </asp:Content>

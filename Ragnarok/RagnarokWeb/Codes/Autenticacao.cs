@@ -5,10 +5,18 @@ using System.Web;
 using System.Web.SessionState;
 namespace RagnarokWeb.Codes
 {
+    /// <summary>
+    /// Classe para autenticação do site
+    /// </summary>
     public class Autenticacao
     {
         private HttpResponse response;
         private HttpSessionState session;
+        /// <summary>
+        /// Inicializa a a classe 
+        /// </summary>
+        /// <param name="resp">Contexto</param>
+        /// <param name="session">Varialvel de sessão do contexto</param>
         public Autenticacao(HttpResponse resp,HttpSessionState session)
         {
             this.response = resp;

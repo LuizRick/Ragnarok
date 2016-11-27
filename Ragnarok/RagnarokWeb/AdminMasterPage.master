@@ -43,6 +43,7 @@
         </div>
         <div class="imagetop"></div>
         <div class="maincontent">
+            <h1>Admin</h1>
             <!-- esta tag asp e para conter o conteudo de cada pagina do site -->
             <asp:ContentPlaceHolder ID="PageBody" runat="server"></asp:ContentPlaceHolder>
             <!-- fim do contentplaceholder -->

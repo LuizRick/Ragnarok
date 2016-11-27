@@ -6,11 +6,14 @@ using System.Data;
 using System.Data.OleDb;
 namespace RagnarokWeb.Codes
 {
+    /// <summary>
+    /// Classe de conexão com banco de dados access do site
+    /// </summary>
     public class DataBase
     {
-        private string dbPath = @"C:\ragnarokdb\BancoPortal.mdb";
-        OleDbConnection conn;
-        OleDbCommand cmd;
+        private string dbPath = @"C:\ragnarokdb\BancoPortal.mdb";   //caminho do banco
+        OleDbConnection conn;                       //para conexao com o banco
+        OleDbCommand cmd;                           //comandos para o banco
         /// <summary>
         /// Executa construtor interno e abre conexao padrão local
         /// </summary>
@@ -30,6 +33,9 @@ namespace RagnarokWeb.Codes
 
         }
 
+        /// <summary>
+        ///Metodo que abre conexão padrão oledb com acesses 
+        /// </summary>
         public void open()
         {
            if(conn == null)
@@ -42,6 +48,10 @@ namespace RagnarokWeb.Codes
             }
         }
 
+
+        /// <summary>
+        /// Fecha conexão atual
+        /// </summary>
         public void close()
         {
             if (conn != null)
@@ -64,7 +74,7 @@ namespace RagnarokWeb.Codes
         /// Executa e retorna um DataReader
         /// </summary>
         /// <param name="sql"></param>
-        /// <returns>Objet - fazer Cast Para OleDbDataReader</returns>
+        /// <returns>Objet - fazer Cast Para OleDbDataReader ou IDataReader</returns>
         public Object ReturnQuery(string sql)
         {
             cmd.CommandText = sql;
