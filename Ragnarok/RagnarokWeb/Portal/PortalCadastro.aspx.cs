@@ -29,7 +29,7 @@ namespace RagnarokWeb
             cmd.CommandType = CommandType.Text;
             cmd.ExecuteScalar();
             Response.Write("<script LANGUAGE='JavaScript' >alert('Cadastro realizado com sucesso')</script>");
-            Response.Redirect("/Porta/");
+            Response.Redirect("/Portal/");
             conn.Close();
             conn.Dispose();
         }

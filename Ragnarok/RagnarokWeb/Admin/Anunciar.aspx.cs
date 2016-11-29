@@ -42,7 +42,7 @@ namespace RagnarokWeb.Admin
             conn.Open();
             cmd.ExecuteScalar();
             Response.Write("<script LANGUAGE='JavaScript'>alert('Cadastro realizado com sucesso')</script>"); // mensagem 
-            Response.Redirect("/Admin/Anuncios.aspx");
+            Response.Redirect("/Admin/Anunciar.aspx");
             conn.Close();
             conn.Dispose();
         }

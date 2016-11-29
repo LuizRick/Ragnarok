@@ -2,5 +2,11 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="PageBody" runat="server">
-    <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+    <article class="main-article">
+        <header>Sobre</header>
+    </article>
+    <h4>Site para Cadastro de Anúncios de jogos de MMO RPG</h4>
+    <div>
+        Faça agora seu cadastro clicando <a href="PortalCadastro.aspx">aqui</a>
+    </div>
 </asp:Content>
